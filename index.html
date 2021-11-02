@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!-- Modal -->
+      <div
+        class="modal fade bg-transparent"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="
+            modal-dialog
+            d-flex
+            flex-column
+            justify-content-center
+            text-center
+          "
+          style="height: 80%"
+        >
+          <h4>Dear <span id="tamu"></span></h4>
+          <img
+            class="my-3 img-fluid mt-5"
+            src="assets/img/modal_banner.svg"
+            alt=""
+          />
+          <p class="text-center" width="100">
+            Tanpa mengurangi rasa hormat, kami memberikan kabar bahagia ini dan
+            memohon restu dari rekan sekalian untuk senantiasa mendoakan
+            kelancaran acara pernikahan kami.
+          </p>
+          <button class="border-fill">lihat undangan</button>
+        </div>
+      </div>
+
+      <div class="row p-0">
+        <div
+          id="banner"
+          class="
+            p-0
+            col-xl-8 col-sm-6 col-12
+            h-100
+            text-dark
+            py-2
+            d-flex
+            flex-column
+            align-items-center
+          "
+        >
+          <img data-aos="fade-up" 
+            class="img-fluid mt-5"
+            src="assets/img/shabrinadiantext-full.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-8 col-sm-6 invisible col-12">
+          <!--hidden spacer-->
+        </div>
+        <div
+          class="
+            offset-xl-8 offset-sm-6 offset-12
+            p-2
+            col
+            text-center
+            px-0
+            py-0
+          "
+        >
+          <img
+            class="pt-5 pb-3 img-fluid"
+            width="30%"
+            src="assets/img/assalamualaikum.svg"
+            alt=""
+          />
+          <h4 class="font-nenna py-2" data-aos="fade-up">
+            Assalamu'alaikum Warahmatullah Wabarakatuh
+          </h4>
+          <p class="py-2 lh-sm" data-aos="fade-up">
+            Dengan memohon rahmat dan ridho Allah Subhanahu wa ta'ala kami
+            bermaksud menyelenggarakan pernikahan putra putri kami
+          </p>
+          <img class="img-fluid py-2" src="assets/img/awan.svg" alt="" />
+          <!-- NAMA MEMPELAI -->
+          <h1 class="font-nenna h1 mt-3 font-big">Shabrina</h1>
+          <button class="border">Fillahi Najah, S.E</button>
+          <p class="mb-0">Putri pertama dari</p>
+          <p class="lh-sm">
+            <b>Bapak Agus Aminuddin</b> dan <b>Ibu Restu Nurini</b>
+          </p>
+          <p class="text-purple mb-0">dan</p>
+          <h1 class="font-nenna h1 p-0 font-big">Nurdiyansah</h1>
+          <button class="border">Prabowo, S.Pd</button>
+          <p class="mb-0">Putra pertama dari</p>
+          <p class="lh-sm">
+            <b>Bapak Taharsyah</b> dan <b>Ibu Sugi Mulyani</b>
+          </p>
+          <img class="my-5" src="assets/img/awan2.svg" alt="" />
+          <!-- DETIL ACARA -->
+          <h3 class="text-purple mb-4">Detil Acara</h3>
+          <div class="akad" data-aos="fade-up" data-aos-delay="500">
+              <h5 class="text-purple">~ Akad Nikah ~</h5>
+              <p class="mb-0">Ahad, 17 Oktober 2021</p>
+              <p>Pukul 07.00 Wib</p>
+          </div>
+          <div class="walimah" data-aos="fade-up" data-aos-delay="500">
+              <h5 class="text-purple mt-3">~ Walimatul 'Urs ~</h5>
+              <p class="mb-0">Ahad, 17 Oktober 2021</p>
+              <p>Pukul 10.30 - 12.00 Wib</p>
+          </div>
+          <!-- COUNTDOWN -->
+          <h2 class="font-nenna">berapa hari lagi?</h2>
+          <section class="section-countdown" id="countdown">
+            <div class="timer countdown row justify-content-center px-3"></div>
+          </section>
+          <img class="img-fluid my-3" src="assets/img/savethedate.svg" alt="" />
+          <!-- AMPLOP DIGITAL -->
+          <div class="amplop" data-aos="fade-up" data-aos-delay="600">
+            <h3 class="text-purple my-3" >Amplop Digital</h3>
+            <img class="img-fluid" src="assets/img/BSI.svg" alt="" />
+            <p class="mt-2 mb-0"><b>1058522604</b></p>
+            <p>an. Shabrina Fillahi Najah</p>
+          </div>
+          
+          <button class="border-fill">copy no rekening</button>
+          <br />
+          <img class="img-fluid my-5" src="assets/img/awan2.svg" alt="" />
+          <h3 class="text-purple mb-4">Lokasi Acara</h3>
+          <!-- MAPS -->
+          <div style="width: 100%" data-aos="fade-up" data-aos-delay="700">
+            <h3 class="text-purple mb-4">Lokasi Acara</h3>
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Jl.%20Arjuno%20I,%20Mergelo,%20Wates,%20Kec.%20Magersari,%20Kota%20Mojokerto,%20Jawa%20Timur%2061317+(Alamat%20Walimah)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <p class="mt-3 mb-2 px-2 w-100">
+              Jalan Arjuno I No. 15 RT 3 RW 2 Kel. Wates<br>Kec. Magersari Kota
+              Mojokerto Prov. Jawa Timur
+            </p>
+            <a href="https://www.google.com/maps/place/7%C2%B027'21.9%22S+112%C2%B026'59.8%22E/@-7.4560802,112.4477511,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-7.4560802!4d112.4499398?hl=en">
+              <button class="border-fill my-4">buka google maps</button></a>
+          </div>
+          <!-- END MAPS -->
+          <div style="width: 100%" data-aos="fade-up" data-aos-delay="700">
+            <img width="100%" class="img-fluid" src="assets/img/konfirmasihadir.png" alt="" />
+            <button onclick="window.open('https://forms.gle/vWmoZUx1vsw7X7VB7', '_blank'); return false;" class="my-3 border-fill px-4">
+              Konfirmasi Kehadiran
+            </button>
+          </div>
+          <img class="my-5" src="assets/img/awan2.png" alt="" />
+
+
+          <!-- START UCAPAN -->
+          <div style="width: 100%" data-aos="fade-up" data-aos-delay="700">
+            <h3 class="text-purple mb-4">Kirim Ucapan</h3>
+
+            <form action="" method="post">
+              <div class=" form-group row" style="padding-left:50px; padding-right:50px">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" autocomplete="off" required>
+              </div>
+              <br>
+              <div class="form-group row" style="padding-left:50px; padding-right:50px">
+                <textarea class="form-control" name="ucapan" id="ucapan" placeholder="Pesan atau Ucapan" autocomplete="off" required></textarea>
+              </div>
+              <div class="form-group row" style="padding-left:50px; padding-right:50px">
+                <div class="col">
+                  <button type="submit" class="my-3 border-fill px-4">Kirim</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <div class="Scroll mx-5">
+            <table class="table">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>
+                      <br>
+                      <h5 class="card-title text-purple">dari Rifqi</h5>
+                      <p class="card-text">Bahagia Selalu</p>
+                      <br>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- END UCAPAN -->
+
+
+          <p class="mb-0 mt-3" data-aos="fade-up" data-aos-delay="600"><b>PROTOKOL</b></p>
+          <h1 class="mb-0" data-aos="fade-up" data-aos-delay="600">KESEHATAN</h1>
+          <h2 class="text-purple mb-5" data-aos="fade-up" data-aos-delay="600">(COVID-19)</h2>
+          <img class="img-fluid" src="assets/img/protokol-covid.svg" alt="" data-aos="fade-up" data-aos-delay="600"/>
+          <h1 class="font-nenna mt-5 mb-4" data-aos="fade-up" data-aos-delay="600">TERIMAKASIH</h1>
+          <p class="mb-0"><b>Jazakumullah Khairan Katsiran</b></p>
+          <p class="mb-0">Atas Doa dan Restu dari Bapak / Ibu / Saudara/i</p>
+          <p class="mb-0">Kami ucapkan banyak terimakasih</p>
+          <p class="mb-0">Kami Yang Berbahagia</p>
+          <div class="footer" data-aos="fade-up" data-aos-delay="600">
+              <img
+                class="w-50 img-fluid my-4"
+                src="assets/img/shabrinadiantext.svg"
+                alt=""
+              />
+              <img class="w-100 img-fluid" src="assets/img/footer.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/pizzicato/Pizzicato.min.js"></script>
+    <script src="assets/timezz/timezz.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#exampleModal").modal("show");
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const dear_ = urlParams.get("dear");
+        const jabatan = urlParams.get("jabatan");
+        // console.log(dear_);
+        $("#tamu").html(dear_);
+        if (jabatan != "") {
+          $("#jabatan").html(jabatan);
+        }
+      });
+    </script>
+    <script>
+      new TimezZ(".countdown", {
+        date: "Oct 17, 2021 07:00:00",
+        isStopped: false,
+        canContinue: false,
+        template:
+          "<div class='col-3 col-md-2 countdown-detail'><h2><b>NUMBER</b></h2><p>LETTER</p></div>",
+        text: {
+          days: "Days",
+          hours: "Hours",
+          minutes: "Minutes",
+          seconds: "Seconds",
+        },
+        beforeCreate() {},
+        beforeDestroy() {},
+        finished() {},
+      });
+      var nadajiwa = new Pizzicato.Sound(
+        "assets/audio/nada_jiwa_rev.mp3",
+        function () {
+          nadajiwa.play();
+        }
+      );
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

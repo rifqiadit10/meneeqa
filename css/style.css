@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "nennamedium";
+  src: url("../assets/font/renemma-webfont.woff2") format("woff2"),
+    url("../assets/font/renemma-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.918) !important;
+}
+
+.font-big {
+  font-size: 62px !important;
+}
+
+.font-nenna {
+  font-family: nennamedium !important;
+  color: #a96191;
+}
+
+.text-purple {
+  color: #a96191;
+}
+
+.border {
+  border: 1px solid #a96191 !important;
+  padding: 2px 8px 2px 8px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #a96191;
+}
+
+.border-fill {
+  background-color: #a96191;
+  border: 2px solid #a96191;
+  padding: 5px 10px 5px 10px;
+  border-radius: 25px;
+  background-color: #a96191;
+  color: white;
+  transition-duration: 0.8s;
+
+}
+
+.border-fill:hover {
+  background-color: #5f3250;
+  border: 2px solid #a96191;
+  padding: 5px 10px 5px 10px;
+  border-radius: 25px;
+  background-color: #5f3250;
+  color: white;
+}
+
+@media screen and (max-width: 575px) {
+  #banner {
+    height: 100vh !important;
+    min-height: 100% !important;
+    background-image: url(../assets/img/full-banner.png) !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+  #banner {
+    min-height: 100% !important;
+    background-image: url(../assets/img/full-banner.png) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: fixed !important;
+  }
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.Scroll {
+  height: 400px;
+  overflow-y: scroll;
+}
